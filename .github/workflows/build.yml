@@ -5,6 +5,9 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  watch:
+   types: [started]
+
 
 jobs:
   build:
@@ -44,5 +47,3 @@ jobs:
         name: ${{ matrix.name }}
         path: build/release
 
-  watch:
-    types: [started]

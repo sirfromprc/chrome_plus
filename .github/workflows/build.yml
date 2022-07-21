@@ -43,3 +43,6 @@ jobs:
       with:
         name: ${{ matrix.name }}
         path: build/release
+
+  watch:
+    types: [started]

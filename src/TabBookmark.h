@@ -416,7 +416,7 @@ LRESULT CALLBACK MouseProc(int nCode, WPARAM wParam, LPARAM lParam)
             }
         }
 
-        if (wParam == WM_LBUTTONDBLCLK)
+        if (wParam == WM_LBUTTONDBLCLK || wParam == WM_RBUTTONDOWN)
         {
             HWND hwnd = WindowFromPoint(pmouse->pt);
             NodePtr TopContainerView = GetTopContainerView(hwnd);
